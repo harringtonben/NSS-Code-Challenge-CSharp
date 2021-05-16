@@ -6,7 +6,14 @@ namespace NSS_Code_Challenge_CSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var requestContext = new RequestContext();
+            var lukeData = requestContext.GetLukeData();
+            Console.WriteLine("*************************************************");
+            Console.WriteLine("***********And the results are in!!**************");
+            Console.WriteLine(lukeData.ToString());
+            Console.WriteLine("*************************************************");
+
         }
     }
 }

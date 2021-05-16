@@ -6,4 +6,10 @@
         <RootNamespace>NSS_Code_Challenge_CSharp</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="RestSharp" Version="106.11.7" />
+      <PackageReference Include="SWapiCSharp" Version="1.2.0" />
+    </ItemGroup>
+
 </Project>
