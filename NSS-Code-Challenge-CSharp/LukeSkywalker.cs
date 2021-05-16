@@ -8,6 +8,14 @@ namespace NSS_Code_Challenge_CSharp
 {
     public class LukeSkyWalker : Person
     {
+        public IEnumerable<string> StarshipsFormatted { get; set; }
+        
+        public IEnumerable<string> FilmsFormatted { get; set; }
+        
+        public IEnumerable<string> SpeciesFormatted { get; set; }
+        
+        public IEnumerable<string> VehiclesFormatted { get; set; }
+        
         public override string ToString()
         {
             return this.Name + Environment.NewLine +
@@ -18,11 +26,11 @@ namespace NSS_Code_Challenge_CSharp
                    "Eye Color: " + this.EyeColor + Environment.NewLine +
                    "Birth year: " + this.BirthYear + Environment.NewLine +
                    "Gender: " + this.Gender + Environment.NewLine +
-                   "Home World: " + this.Gender + Environment.NewLine +
-                   "Films: " + String.Join(", ", this.Films) + Environment.NewLine +
-                   "Species: " + String.Join(", ", this.Species) + Environment.NewLine +
-                   "Vehicles: " + String.Join(", ", this.Vehicles) + Environment.NewLine +
-                   "Star Ships: " + String.Join(", ", this.Starships)  + Environment.NewLine +
+                   "Home World: " + this.Homeworld + Environment.NewLine +
+                   "Films: " + String.Join(", ", this.FilmsFormatted) + Environment.NewLine +
+                   "Species: " + String.Join(", ", this.SpeciesFormatted) + Environment.NewLine +
+                   "Vehicles: " + String.Join(", ", this.VehiclesFormatted) + Environment.NewLine +
+                   "Star Ships: " + String.Join(", ", this.StarshipsFormatted)  + Environment.NewLine +
                    ""; 
         }
     }
